@@ -12,7 +12,7 @@ interface Props
 
 export default function Link(props: Props) {
     const { url: _url, className, sizing, children } = props
-    const base_url = 'http://localhost:3000'
+    const base_url = 'https://www.geevee.dev'
     let url: URL
     try{
         url = new URL(_url)
