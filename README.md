@@ -1,4 +1,4 @@
-#About
+# About
 
 This is the source code for my website.
 
@@ -8,21 +8,21 @@ Please feel free to fork and use my site as a template! Credit would be apprecia
 
 This app is specifically built for Docker.
 
-#How To Run
+# How To Run
 
 ### Docker
 
-#####Development
+##### Development
 Run `docker compose -f docker-compose.yml up -d`, then restart this container whenever need be. 
 *note*: If you need to install new dependencies, please rerun the command above.
 
-#####Production
+##### Production
 Whenever changes need to be tested in production, run `docker compose -f docker-compose-prod.yml up --build -d`.
 
-###Local
+### Local
 
-#####Development
+##### Development
 Run `npm i && npm run dev`.
 
-#####Production
+##### Production
 Run `npm i && npm build && npm start`.
