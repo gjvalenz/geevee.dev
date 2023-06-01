@@ -7,6 +7,18 @@ const nextConfig = {
         }
         return config
     },
+    async rewrites() {
+        return [
+            {
+                source: '/mario',
+                destination: '/mario/index.html'
+            },
+            {
+                source: '/mario/index.html',
+                destination: '/mario'
+            }
+        ]
+    }
 }
 
 module.exports = nextConfig

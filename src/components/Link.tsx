@@ -32,5 +32,5 @@ export default function Link(props: Props) {
         <OLink href={url} passHref legacyBehavior>
             <a className={classes}>{children}</a>
         </OLink>
-    );
+    )
 };

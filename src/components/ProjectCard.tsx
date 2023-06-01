@@ -26,24 +26,25 @@ function ReadMore(props: ReadMoreProps) {
             <p className={bottom_classes + ' mt-2'} onClick={() => callback(true)}>read more</p>
         )
     return (
-      <>
-        <p className='mt-2 max-w-lg text-center'>{short_description}</p>
-        { url && <div className='flex flex-col max-w-lg mt-2'>
-          <div className='flex flex-row content-between'>
-          <Link url={url} className='px-2'>demo</Link>
-          {github_url && <Link url={github_url} className='px-2'>github</Link> }
-          </div>
-        </div>}
-        { !url && <>
-          { github_url && <Link url={github_url} className='mt-2'>github</Link>}
-        </>}
-        {!github_url &&
-          <p className='mt-2 text-sm italic'>Please contact me for further details about the code. I&apos;ll be happy to talk about it!</p>}
-        <p className='mt-2 max-w-lg text-center text-sm text-slate-500'>tech: {skills}</p>
-        <p className={bottom_classes} onClick={() => callback(false)}>collapse</p>
-      </>
-    );
-  }
+        <>
+            <p className='mt-2 max-w-lg text-center'>{short_description}</p>
+            { url && <div className='flex flex-col max-w-lg mt-2'>
+                <div className='flex flex-row content-between'>
+                    <Link url={url} className='px-2'>demo</Link>
+                    {github_url && <Link url={github_url} className='px-2'>github</Link> }
+                </div>
+            </div>}
+            { !url && <>
+                { github_url && <Link url={github_url} className='mt-2'>github</Link>}
+            </>}
+            {!github_url &&
+                <p className='mt-2 text-sm italic'>Please contact me for further details about the code. I&apos;ll be happy to talk about it!</p>
+            }
+            <p className='mt-2 max-w-lg text-center text-sm text-slate-500'>tech: {skills}</p>
+            <p className={bottom_classes} onClick={() => callback(false)}>collapse</p>
+        </>
+    )
+}
 
 export interface Project
 {
