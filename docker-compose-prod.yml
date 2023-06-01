@@ -1,0 +1,14 @@
+# docker-compose-prod.yml
+
+version: "3"
+
+services:
+  site-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      target: production
+    container_name: site-prod
+    restart: always
+    ports:
+      - 3000:3000
