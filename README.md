@@ -4,7 +4,7 @@ This is the source code for my website.
 
 Please feel free to fork and use my site as a template! Credit would be appreciated.
 
-[geevee.dev](http://geevee.dev/) is written in Typescript with Next.js and Tailwind CSS. It is an application that runs on AWS Amplify and uses Google's Realtime Database to host its content.
+[www.geevee.dev](https://www.geevee.dev/) is written in Typescript with Next.js and Tailwind CSS. It is an application that runs on AWS Amplify and uses Google's Realtime Database to host its content.
 
 This app is specifically built for Docker.
 
