@@ -10,7 +10,7 @@ This app is specifically built for Docker.
 
 # How To Run
 
-### Docker
+## Docker
 
 ##### Development
 Run `docker compose -f docker-compose.yml up -d`, then restart this container whenever need be. 
@@ -19,7 +19,7 @@ Run `docker compose -f docker-compose.yml up -d`, then restart this container wh
 ##### Production
 Whenever changes need to be tested in production, run `docker compose -f docker-compose-prod.yml up --build -d`.
 
-### Local
+## Local
 
 ##### Development
 Run `npm i && npm run dev`.
