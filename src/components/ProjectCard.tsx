@@ -54,6 +54,7 @@ export interface Project
     short_description: string,
     flipped?: boolean,
     square?: boolean,
+    active?: boolean,
     name: string,
     github_url: string,
     skills: string,
@@ -69,10 +70,12 @@ interface Props extends Project
 export default function ProjectCard(props: Props){
     const { _id: id_, story, url, short_description,
         flipped: flipped = false, square: square = false,
-        name: nm, github_url, skills, image_url, video } = props
+        name: nm, github_url, skills, image_url, video, active: active = true } = props
     const [ clicked, setClicked ] = useState(false)
     const [ useVideo, setVideo ] = useState(false)
     useEffect(() => setVideo(true), []) // dumb little hack because hydration
+    if(!active) // do not render if not active
+        return (<></>)
     return (
         <div className='flex flex-col items-center'>
             <Link url={ url ? url : '/projects/#'} sizing='text-3xl' className='mb-8'>{nm}</Link>
