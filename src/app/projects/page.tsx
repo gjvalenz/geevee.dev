@@ -15,6 +15,7 @@ async function getData() {
     return projects
 }
 
+// organization comparation scheme for projects
 const comp = (a: Project, b: Project) =>
 {
     if(a.url && !b.url)
